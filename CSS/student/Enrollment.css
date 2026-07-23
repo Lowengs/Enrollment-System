@@ -1,0 +1,203 @@
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Section Select Styles */
+.section-select-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.section-select-container label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+#sectionSelect {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+#semesterSelect {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+#sectionSelect:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+}
+
+#sectionSelect:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Subject Container Styles */
+#subjectContainer {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* Table Styles */
+#subjectContainer table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+}
+
+#subjectContainer th {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-weight: 600;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+#subjectContainer td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#subjectContainer tr:last-child td {
+    border-bottom: none;
+}
+
+#subjectContainer tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Checkbox Styles */
+#subjectContainer input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#subjectContainer input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Button Styles */
+#subjectContainer button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#subjectContainer button.enroll-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+#subjectContainer button.enroll-btn:hover {
+    background-color: #2563eb;
+}
+
+#subjectContainer button.enroll-btn:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* Error Message Styles */
+#subjectContainer p[style*="color:red"] {
+    padding: 20px;
+    text-align: center;
+    color: #dc2626 !important;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #fee2e2;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 20px auto;
+    }
+
+    .main-content h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .section-select-container {
+        padding: 20px;
+    }
+
+    #subjectContainer {
+        overflow-x: auto;
+    }
+
+    #subjectContainer table {
+        min-width: 600px;
+    }
+
+    #subjectContainer th,
+    #subjectContainer td {
+        padding: 12px 16px;
+    }
+} 

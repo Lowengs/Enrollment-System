@@ -1,0 +1,75 @@
+.subject-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2em;
+  }
+  
+  .subject-table th, .subject-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .subject-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50; 
+  }
+  
+  .delete-btn {
+    background-color: #f44336; 
+  }
+    
+
+  .filter p{
+    font-family: 'roboto', sans-serif;
+    margin-top: 1.6em;
+    font-size: 20px;
+    margin-bottom: 10px;
+   
+  }
+
+  .filter{
+    display: flex;
+  }
+
+  .filter select{
+    
+    margin-left: 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    width: 200px;
+    padding: 5px;
+
+  }
+
+  .filter button{
+    margin-top: 1.8em;
+    width:100px;
+    height: 30px;
+    background-color: #337735; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .filter button:hover{
+    background-color: #2e6b2e; 
+  }

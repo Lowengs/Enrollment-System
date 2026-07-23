@@ -1,0 +1,486 @@
+nav{
+    height: 11vh;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+   
+   
+}
+
+    nav ul li{
+      
+        padding: 8px 25px;
+        margin-top: 20px;
+        font-family: 'roboto', sans-serif;
+        
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        
+    }
+
+    nav ul li:first-of-type{
+        margin-left: 50px;
+    }
+
+    nav ul li a:hover{
+        text-decoration: underline rgb(32, 32, 175) 2px;
+    }
+
+    nav ul li.active {
+        background-color: #3b82f6;
+        border-radius: 4px;
+    }
+
+    nav ul li.active a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li.active a:hover {
+        text-decoration: none;
+    }
+
+    main{
+        
+        height: 130vh;
+    }
+
+    .welcome{
+        margin-top: 20px;
+        margin-left: 73px;
+        font-family: 'roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    .content{
+       
+        width: 100%;
+        height: 120vh;
+        margin-top: 1em;
+        display: flex;
+    }
+
+    .col-one,.col-two{
+       
+        height: 140vh;
+        width: 50%;
+    
+        
+    }
+
+    .student-information {
+        border: 1.6px solid rgb(128, 128, 128);
+        width: 93%;
+        height: 80vh;
+        margin-top: 2em;
+        border-radius: 10px;
+        margin-left: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        height: 100%;
+    }
+
+    .info-section {
+        flex: 1;
+        padding-right: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-section h1 {
+        font-family: 'Inter', 'Roboto', sans-serif;
+        font-size: 25px;
+        margin: 10px 0 20px 0;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: -0.5px;
+    }
+
+    .info-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .info-content p {
+        flex: 1 1 calc(50% - 20px);
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        min-width: 200px;
+    }
+
+    .info-content p:last-child {
+        flex: 1 1 100%;
+    }
+
+    .profile-section {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        
+    }
+
+    .profile-frame {
+        width: 200px;
+        height: 200px;
+        border: 4px solid #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background: #f8fafc;
+        margin-bottom: 20px;
+    }
+
+    .profile-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .student-information h1 {
+        font-family: 'Inter', 'Roboto', sans-serif;
+        font-size: 25px;
+        margin: 10px 0 30px 20px;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: -0.5px;
+    }
+
+    .info-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .info-item .label {
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+        font-family: 'Inter', 'Roboto', sans-serif;
+        letter-spacing: -0.2px;
+    }
+
+    .info-item .value {
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+        line-height: 1.5;
+        font-family: 'Inter', 'Roboto', sans-serif;
+        letter-spacing: -0.3px;
+    }
+
+    .info-group.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .no-data {
+        text-align: center;
+        color: #666;
+        font-size: 16px;
+        padding: 20px;
+        font-family: 'Inter', 'Roboto', sans-serif;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .info-container {
+            flex-direction: column;
+        }
+
+        .profile-section {
+            width: 100%;
+            padding-top: 0;
+        }
+
+        .profile-frame {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+    }
+
+    .announcement{
+        border: 1.6px solid rgb(128, 128, 128);
+        width: 93%;
+        height: 30vh;
+        margin-top: 2em;
+        border-radius: 10px;
+        margin-left: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .balance {
+        border: 1.6px solid rgb(128, 128, 128);
+        width: 93%;
+        height: 50vh;
+        margin-top: 2em;
+        border-radius: 10px;
+        margin-left: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+        background: #fff;
+    }
+
+    .progress{
+        border: 1.6px solid rgb(128, 128, 128);
+        width: 93%;
+        height: 77vh;
+        margin-top: 2em;
+        border-radius: 10px;
+        margin-left: 2em;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 20px;
+    }
+
+    .student-information h1, .announcement h1, .balance h1, .progress h1{
+        font-family: 'roboto', sans-serif;
+        font-size: 23px;
+        margin: 10px 0 30px 20px;
+        font-weight: 600;
+    }
+
+    .enrollment-status {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .status-section {
+        padding: 10px 0;
+    }
+
+    .status-section h3 {
+        font-size: 16px;
+        color: #1e293b;
+        margin: 0 0 15px 0;
+        font-weight: 600;
+    }
+
+    .status-details {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .detail-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .detail-item .label {
+        color: #64748b;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .detail-item .value {
+        color: #1e293b;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .status-badge {
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .status-badge.enrolled {
+        background: #dcfce7;
+        color: #166534;
+    }
+
+    /* Hide scrollbar but keep functionality */
+    .enrollment-status::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .enrollment-status {
+        scrollbar-width: none;
+    }
+
+    .calendar {
+        padding: 2px 0;
+        max-width: 500px;
+        margin: 0 auto;
+        background: #f8fafc;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .calendar-header {
+        text-align: center;
+        margin-bottom: 5px;
+        background: #3b82f6;
+        padding: 5px;
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .calendar-header h3 {
+        font-size: 13px;
+        color: white;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .calendar-grid {
+        margin-bottom: 3px;
+        padding: 0 8px;
+    }
+
+    .weekdays {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .weekdays div {
+        font-size: 10px;
+        color: #64748b;
+        font-weight: 600;
+        padding: 1px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1px;
+    }
+
+    .day {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        color: #1e293b;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background: white;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .day:hover {
+        background: #e0f2fe;
+        border-color: #3b82f6;
+        box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+        transform: translateY(-1px);
+    }
+
+    .day.today {
+        background: #3b82f6;
+        color: white;
+        font-weight: 600;
+        border-color: #3b82f6;
+        box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+    }
+
+    .day.empty {
+        background: none;
+        border: none;
+        cursor: default;
+    }
+
+    /* Weekend days styling */
+    .days div:nth-child(7n),
+    .days div:nth-child(7n+1) {
+        color: #ef4444;
+    }
+
+    .days div:nth-child(7n).today,
+    .days div:nth-child(7n+1).today {
+        color: white;
+    }
+
+    .calendar-events {
+        padding-top: 15px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .calendar-events h3 {
+        font-size: 16px;
+        color: #1e293b;
+        margin: 0 0 15px 0;
+        font-weight: 600;
+    }
+
+    .event-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .event-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+    }
+
+    .event-item:hover {
+        background: #f8fafc;
+    }
+
+    .event-date {
+        font-size: 14px;
+        color: #3b82f6;
+        font-weight: 600;
+        min-width: 50px;
+    }
+
+    .event-title {
+        font-size: 14px;
+        color: #1e293b;
+    }
+
+    .progress h1 {
+        font-family: 'roboto', sans-serif;
+        font-size: 23px;
+        margin: 10px 0 30px 20px;
+        font-weight: 700;
+        color: #1e293b;
+        letter-spacing: -0.5px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    
+

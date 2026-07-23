@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.usercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    gap: 8em;
+    
+}
+
+.usercontainer img{
+    
+    height: 130px;
+    display: block; 
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: filter 0.3s ease;
+}
+
+.studentcontainer,.facultycontainer,.registrarcontainer{
+    height: 230px;
+    width: 200px;
+   text-align: center;
+   padding: 20px 30px;
+   border-radius: 20px;
+
+    
+}
+.studentcontainer p,.facultycontainer p,.registrarcontainer p{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif; 
+    line-height: 35px;
+    margin-top: 15px;
+    font-weight: 500;
+    color: rgb(61, 57, 57);
+}
+.studentcontainer:hover,.facultycontainer:hover,.registrarcontainer:hover{
+    background-color: #27548A;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.335);
+    color: white;
+    
+    
+}
+
+.studentcontainer:hover p,
+.facultycontainer:hover p,
+.registrarcontainer:hover p {
+    color: #e8dfdf;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+

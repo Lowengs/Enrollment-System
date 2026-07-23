@@ -1,0 +1,48 @@
+.sidebar {
+    min-height: 100vh;
+    background: #2c3e50;
+    color: white;
+}
+.nav-link {
+    color: white;
+    margin: 5px 0;
+}
+.nav-link:hover {
+    background: #34495e;
+    color: white;
+}
+.main-content {
+    background: #f8f9fa;
+}
+.enrollment-card {
+    transition: transform 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+.enrollment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.search-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.status-badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
